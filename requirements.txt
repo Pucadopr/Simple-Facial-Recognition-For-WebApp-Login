@@ -3,4 +3,3 @@ flask_wtf
 wtforms
 requests
 gunicorn
-wsgi
