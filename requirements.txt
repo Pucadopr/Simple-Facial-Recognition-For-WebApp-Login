@@ -3,3 +3,4 @@ flask_wtf
 wtforms
 requests
 gunicorn
+pillow
