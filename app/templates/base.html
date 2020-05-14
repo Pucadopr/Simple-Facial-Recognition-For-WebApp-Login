@@ -13,9 +13,7 @@
     <body>
         <div><a href="{{ url_for('index') }}">Login to Thumming</a></div>
         <hr>
-        <div id="content"></div>
+        {% block content %}{% endblock %}
         
-        <!-- <script src="/static/webcam.js"></script>
-        <script src="/static/custom.js"></script> -->
     </body>
 </html>
