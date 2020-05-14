@@ -1,0 +1,25 @@
+<h3 style="color: red">{{message}}</h3>
+
+<h2>Login form</h2>
+<div>
+    <p>To login, please enter your username. Also, take your photo using the web camera.</p>
+    <p>Press the <b>Snap</b> button to take a photo. Photo will show at the bottom</p>
+    <p>You can press <b>Snap</b> several times until you have the right photo showing your face clearly</p>
+    <p>When you are ready, press the <b>Submit</b> button. Our facial recognition system will handle the rest</p>
+</div>
+
+<form id="loginForm" action="" method="post" novalidate>
+    {{ form.hidden_tag() }} 
+    <p>
+        {{ form.username.label }}<br>
+        {{ form.username(size=32) }}
+    </p> 
+    <input type="button" onclick="upload()" value="Submit">
+</form>
+
+<div id="my_camera"></div>
+<br>
+<input type="button" onclick="snap()" value="Snap">
+<br>
+<hr>
+<div id="results"></div>
