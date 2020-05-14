@@ -1,0 +1,8 @@
+flask
+os
+flask_wtf
+wtforms
+json
+requests
+shlex
+subprocess
