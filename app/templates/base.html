@@ -1,7 +1,7 @@
 <html>
     <head>
-        <script src="{{ url_for('static', filename='js/webcam.js')}}"></script>
-        <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+        <script src="/static/js/webcam.js"></script>
+        <script src="/static/js/custom.js"></script>
       
       {% if title %}
       <title>{{ title }} - Thumming</title>
@@ -17,3 +17,4 @@
         
     </body>
 </html>
+<!-- {{ url_for('static', filename='js/webcam.js')}} -->
