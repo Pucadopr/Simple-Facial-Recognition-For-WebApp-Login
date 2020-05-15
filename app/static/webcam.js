@@ -225,7 +225,7 @@
         attach: function(elem) {
             // create webcam preview and attach to DOM element
             // pass in actual DOM reference, ID, or CSS selector
-            if (typeof(elem) == 'content') {
+            if (typeof(elem) == 'my_camera') {
                 elem = document.getElementById(elem) || document.querySelector(elem);
             }
             if (!elem) {
