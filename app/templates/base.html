@@ -1,7 +1,7 @@
 <html>
     <head>
-        <script src="/static/js/webcam.js"></script>
-        <script src="/static/js/custom.js"></script>
+        <script src="/static/webcam.js"></script>
+        <script src="/static/custom.js"></script>
       
       {% if title %}
       <title>{{ title }} - Thumming</title>
@@ -13,8 +13,7 @@
     <body>
         <div><a href="{{ url_for('index') }}">Login to Thumming</a></div>
         <hr>
-        {% block content %}{% endblock %}
-        
+        <div id="content"></div>   
     </body>
 </html>
 <!-- {{ url_for('static', filename='js/webcam.js')}} -->
